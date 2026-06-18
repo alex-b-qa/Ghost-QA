@@ -155,14 +155,14 @@ This will be the project folder.
 
 Run this command in terminal / command prompt
 
-macOS (Homebrew):
-brew install python-setuptools
+- macOS (Homebrew):
+     brew install python-setuptools
 
-macOS (standard Python):
-python3 -m pip install setuptools
+- macOS (standard Python):
+     python3 -m pip install setuptools
 
-Windows (PowerShell or CMD):
-pip install setuptools
+- Windows (PowerShell or CMD):
+     pip install setuptools
 
 ---
 
