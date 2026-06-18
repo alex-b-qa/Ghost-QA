@@ -167,23 +167,24 @@ Run this command in terminal / command prompt
 ---
 
 ## Install Ghost CLI
-(Add sudo on macOS if permission errors occur)
 
 npm install -g ghost-cli@latest
+
+(Add sudo on macOS if permission errors occur)
 
 ---
 
 ## Create Local Ghost Environment
 mkdir ghost-local  
 cd ghost-local  
-ghost install local
+ghost install local - (Add prefix "sudo" on macOS if permission errors occur)
 
 ---
 
 ## Post-Installation Steps
 1. Open a browser and go to: http://localhost:2368/ghost  
 2. Complete the onboarding wizard to create an admin account  
-3. Save the username and password you signed up with for Cypress tests  
+3. Save the email and password you signed up with. You will need it for running tests.
 
 ---
 
@@ -199,10 +200,10 @@ Run inside the ghost-local directory:
 
 In Finder (mac) or File Explorer (Windows), navigate to the "Ghost QA Test" folder and find the cypress.env.json file
 
-Edit the cypress.env.json file and enter your credentials in double quotes like so:
+Edit the cypress.env.json file and enter your login credentials in double quotes like so:
 
 {
-  "email": "username",
+  "email": "email",
   "password": "password"
 }
 
@@ -216,8 +217,8 @@ Ensure Ghost is running locally before executing tests
 ## How to Run Automated Tests
 
 ## Navigate to the "Ghost QA Test" folder in a terminal or command prompt and run these commands
-cd path/to/"Ghost QA Test"  
-npm install  (may need to run with "sudo npm install" for Mac)
+ 
+npm install  (may need to run with "sudo" for Mac)
 npx cypress open
 
 ---
