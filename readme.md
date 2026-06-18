@@ -1,4 +1,4 @@
-# Ghost QA Testing Project Rough Draft
+# Ghost QA Testing
 
 ## Overview
 This repository documents a QA testing project performed on **Ghost CMS Admin**, combining manual testing and UI test automation. The project demonstrates foundational QA skills including test case design, defect tracking, and end-to-end automation using Cypress.
@@ -129,8 +129,6 @@ The intent is to demonstrate readiness for an entry-level QA role rather than ad
 2. npm (bundled with Node.js)
 3. Python (version 3.12 or newer)
 
-### Note: If you receive any permissions errors while running commands in macOS, you'll need to prefix the command with "sudo".
-
 ---
 ## Repository Setup
 
@@ -153,6 +151,10 @@ This will be the project folder.
 
 --- 
 
+### Note: To avoid any permission errors while running commands in macOS, you'll need to prefix any install commands with "sudo".
+
+---
+
 ## Fix Python 3.12+ Compatibility for SQLite3
 
 Run this command in terminal / command prompt
@@ -170,29 +172,42 @@ Run this command in terminal / command prompt
 
 ## Install Ghost CLI
 
+Run this command in terminal / command prompt
+
 npm install -g ghost-cli@latest
 
 ---
 
 ## Create Local Ghost Environment
+
+Run these commands in terminal / command prompt
+
 mkdir ghost-local  
 cd ghost-local  
-ghost install local - (Add prefix "sudo" on macOS if permission errors occur)
+ghost install local 
 
 ---
 
 ## Post-Installation Steps
 1. Open a browser and go to: http://localhost:2368/ghost  
 2. Complete the onboarding wizard to create an admin account  
-3. Save the email and password you signed up with. You will need it for running tests.
+3. Save the email and password you signed up with. (You will need it for running tests)
 
 ---
 
 ## Ghost Management Commands
-Run inside the ghost-local directory:
+If needed, run inside the ghost-local directory to stop, start, or restart Ghost:
 - ghost stop
 - ghost start
 - ghost restart
+
+---
+
+## Access URLs
+Admin: http://localhost:2368/ghost  
+Site: http://localhost:2368  
+
+This local installation is used as the test environment for all manual and automated testing in this project.
 
 ---
 
@@ -202,13 +217,18 @@ In the Terminal / Command Prompt, run this command inside the "Ghost QA Test" fo
 
 npm install
 
-- This will install Cypress dependencies
+
+## Note on npm warnings
+
+After running `npm install`, you may see vulnerability warnings. These are common in Cypress projects and are related to dependencies, not the test code.
+
+They do not prevent the tests from running.
 
 ---
 
 ## Configure Cypress Environment Variables
 
-In Finder (mac) or File Explorer (Windows), navigate to the "Ghost QA Test" folder and find the cypress.env.json file
+In Finder (macOS) or File Explorer (Windows), navigate to the "Ghost QA Test" folder and find the cypress.env.json file
 
 Edit the cypress.env.json file and enter your login credentials in double quotes like so:
 
@@ -216,7 +236,6 @@ Edit the cypress.env.json file and enter your login credentials in double quotes
   "email": "email",
   "password": "password"
 }
-
 
 --- 
 
@@ -228,7 +247,7 @@ Ensure Ghost is running locally before executing tests
 
 ### Option 1: Open Cypress Test Runner (UI Mode)
 
-## Navigate to the "Ghost QA Test" folder in a terminal or command prompt and run these commands
+## Navigate to the "Ghost QA Test" folder in a terminal or command prompt and run this command
 
 npx cypress open
 
@@ -252,15 +271,6 @@ npx cypress run
 
 This runs all tests in the terminal without opening the Cypress UI.
 
-
-
----
-
-## Access URLs
-Admin: http://localhost:2368/ghost  
-Site: http://localhost:2368  
-
-This local installation is used as the test environment for all manual and automated testing in this project.
 
 ---
 
