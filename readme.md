@@ -124,10 +124,12 @@ The intent is to demonstrate readiness for an entry-level QA role rather than ad
 ## Ghost CMS Local Installation Guide
 
 ### Prerequisites
-1. Node.js (Active LTS version such as v20 or v22)  
+1. Node.js (v22 is recommended)  
    https://nodejs.org/
 2. npm (bundled with Node.js)
 3. Python (version 3.12 or newer)
+
+### Note: If you receive any permissions errors while running commands in macOS, you'll need to prefix the command with "sudo".
 
 ---
 ## Repository Setup
@@ -170,8 +172,6 @@ Run this command in terminal / command prompt
 
 npm install -g ghost-cli@latest
 
-(Add sudo on macOS if permission errors occur)
-
 ---
 
 ## Create Local Ghost Environment
@@ -193,6 +193,16 @@ Run inside the ghost-local directory:
 - ghost stop
 - ghost start
 - ghost restart
+
+---
+
+## Install Cypress dependencies 
+
+In the Terminal / Command Prompt, run this command inside the "Ghost QA Test" folder:
+
+npm install
+
+- This will install Cypress dependencies
 
 ---
 
