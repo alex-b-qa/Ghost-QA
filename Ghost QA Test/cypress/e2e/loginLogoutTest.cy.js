@@ -37,16 +37,3 @@ describe('Login Logout Test Cases', () => {
 
     })
     
-    // it.only('delete post', () => {
-    //     cy.login() 
-    //     Cypress._.times(5, (k) => {  
-    //     cy.contains('Drafts').click()
-    //     cy.get('[data-testid="posts-list"]')
-    //         .find('.gh-posts-list-item')
-    //         .first()
-    //         .rightclick()
-    //     cy.get('[data-test-button="delete"]').click()
-    //     cy.get('[data-test-button="confirm"]').click()  
-
-    //     })  
-    // })
