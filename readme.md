@@ -214,12 +214,35 @@ Ensure Ghost is running locally before executing tests
 
 ---
 
-## How to Run Automated Tests
+## Running Cypress Tests
+
+### Option 1: Open Cypress Test Runner (UI Mode)
 
 ## Navigate to the "Ghost QA Test" folder in a terminal or command prompt and run these commands
- 
-npm install  (may need to run with "sudo" for Mac)
+
 npx cypress open
+
+Steps after running:
+1. Cypress Test Runner opens
+2. Select **E2E Testing**
+3. Choose a browser
+4. Click 'Start E2E Testing'
+5. Click a test file inside cypress/e2e
+6. Tests run interactively in the browser
+7. Click 'Specs' in the far left menu to go back to the list of tests
+
+
+---
+
+### Option 2: Run Tests in Headless Mode
+
+Run this command in the same terminal:
+
+npx cypress run
+
+This runs all tests in the terminal without opening the Cypress UI.
+
+
 
 ---
 
