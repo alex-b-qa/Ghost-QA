@@ -36,7 +36,6 @@ The goal of this project is to showcase practical QA experience suitable for a Q
 - Performance testing
 - Security scanning tools
 
-Defining out-of-scope areas reflects realistic QA project boundaries.
 
 ---
 
@@ -59,7 +58,6 @@ Automated flows include:
 - Edit published post
 - Logout
 
-Automation focuses on high-value, stable user flows rather than edge-case validation, following best practices for maintainable UI automation.
 
 Notable automation challenges addressed:
 - Handling duplicate DOM elements in Ghost Admin
@@ -77,7 +75,7 @@ Notable automation challenges addressed:
 Manual test cases cover:
 - Validation scenarios
 - Negative authentication cases
-- Edge cases not suitable for stable automation
+- Edge cases
 
 ---
 
@@ -103,20 +101,18 @@ This repository includes:
 - Cypress automated test scripts
 - Documented manual test cases
 - Sample bug reports
-- Supporting QA documentation
 
 All artifacts are structured to reflect real-world QA workflows and tooling.
 
 ---
 
 ## Project Focus
-This project is framed as a Junior QA portfolio project, emphasizing:
+This project is framed as a QA portfolio project, emphasizing:
 - Clear test case design
 - Appropriate automation decisions
 - Practical defect identification
 - Familiarity with common QA tools (Cypress, Jira, Zephyr)
 
-The intent is to demonstrate readiness for an entry-level QA role rather than advanced or specialized testing.
 
 ---
 
@@ -233,8 +229,8 @@ In Finder (macOS) or File Explorer (Windows), navigate to the "Ghost QA Test" fo
 Edit the cypress.env.json file and enter your login credentials in double quotes like so:
 
 {
-  "email": "email",
-  "password": "password"
+  "email": "your_email",
+  "password": "your_password"
 }
 
 --- 
@@ -277,4 +273,4 @@ This runs all tests in the terminal without opening the Cypress UI.
 ## Author
 Role: QA Engineer  
 
-This project was created for portfolio and learning purposes.
+This project was created for purposes of this portfolio.
