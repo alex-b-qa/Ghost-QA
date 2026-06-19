@@ -58,6 +58,8 @@ The goal of this project is to showcase practical QA experience suitable for a Q
 - Edit published post
 - Logout
 
+**Location:**  
+`/Ghost QA Test/cypress/e2e/`
 
 Notable automation challenges addressed:
 - Handling duplicate DOM elements in Ghost Admin
@@ -77,6 +79,10 @@ Notable automation challenges addressed:
 - Negative authentication cases
 - Edge cases
 
+
+**Location:**  
+`/manual-tests/`
+
 ---
 
 ## Defect Tracking
@@ -84,6 +90,9 @@ Notable automation challenges addressed:
 - Total defects logged: 2
 
 Bug reports include clear reproduction steps, expected vs actual results, and environment details.
+
+**Location:**  
+`/bug_reports/`
 
 ---
 
