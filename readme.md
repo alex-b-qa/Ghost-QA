@@ -11,7 +11,7 @@ The goal of this project is to showcase practical QA experience suitable for a Q
 - **Application:** Ghost CMS (Admin interface)
 - **Environment:** Local Ghost installation
 - **URL:** http://localhost:2368/ghost
-- **Test Type:** Black-box functional testing
+- **Testing Types:** Black-box functional testing, manual testing, automated tesing (Cypress)
 - **Purpose:** Demonstrate practical QA skills including test case design, execution, defect tracking, and basic automation
 
 ---
@@ -50,7 +50,7 @@ The goal of this project is to showcase practical QA experience suitable for a Q
 ### Automated Coverage
 - Total automated test cases: 6
 
-Automated flows include:
+### Automated flows include:
 - Successful login
 - Create draft post
 - Publish post
@@ -72,7 +72,7 @@ Notable automation challenges addressed:
 - Tool: Zephyr
 - Total manual test cases: 10
 
-Manual test cases cover:
+### Manual test cases cover:
 - Validation scenarios
 - Negative authentication cases
 - Edge cases
