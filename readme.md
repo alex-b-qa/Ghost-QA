@@ -37,7 +37,6 @@ The goal of this project is to showcase practical QA experience suitable for a Q
 - Performance testing
 - Security scanning tools
 
-
 ---
 
 ## Test Automation
@@ -84,26 +83,7 @@ Manual test cases cover:
 - Tool: Jira
 - Total defects logged: 2
 
-Logged defects:
-1. Publish post with no title  
-   - Ghost allows publishing without a required title  
-   - Logged as a validation defect
-
-2. User enumeration via invalid login message  
-   - Error messaging allows inference of valid user accounts  
-   - Logged as a security-related usability defect
-
 Bug reports include clear reproduction steps, expected vs actual results, and environment details.
-
----
-
-## Repository Contents
-This repository includes:
-- Cypress automated test scripts
-- Documented manual test cases
-- Sample bug reports
-
-All artifacts are structured to reflect real-world QA workflows and tooling.
 
 ---
 
@@ -114,9 +94,7 @@ This project is framed as a QA portfolio project, emphasizing:
 - Practical defect identification
 - Familiarity with common QA tools (Cypress, Jira, Zephyr)
 
-
 ---
-
 
 ## Ghost CMS Local Installation Guide
 
