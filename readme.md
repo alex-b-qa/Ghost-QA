@@ -10,12 +10,13 @@ The goal of this project is to showcase practical QA experience suitable for a Q
 ## Application Under Test
 - **Application:** Ghost CMS (Admin interface)
 - **Environment:** Local Ghost installation
-- **Access:** http://localhost:2368/ghost
+- **URL:** http://localhost:2368/ghost
 - **Test Type:** Black-box functional testing
+- **Purpose:** Demonstrate practical QA skills including test case design, execution, defect tracking, and basic automation
 
 ---
 
-## Testing Scope
+## Scope of Testing
 
 ### In Scope
 - Authentication (login, logout)
