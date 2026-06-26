@@ -217,9 +217,7 @@ In Finder (macOS) or File Explorer (Windows), navigate to the "Ghost QA Test" fo
 Edit the cypress.env.json file and enter your login credentials in double quotes like so:
 
 {
-  "email": "your_email",
-
-  
+  "email": "your_email",  
   "password": "your_password"
 }
 
