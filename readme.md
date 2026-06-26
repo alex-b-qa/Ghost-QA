@@ -218,6 +218,7 @@ Edit the cypress.env.json file and enter your login credentials in double quotes
 
 {
   "email": "your_email",
+
   
   "password": "your_password"
 }
