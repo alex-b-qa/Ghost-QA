@@ -156,7 +156,7 @@ Run this command in terminal / command prompt
 
 ## Install Ghost CLI
 
-Run this command in terminal / command prompt
+Run this command in terminal / command prompt:
 
 npm install -g ghost-cli@latest
 
@@ -164,7 +164,7 @@ npm install -g ghost-cli@latest
 
 ## Create Local Ghost Environment
 
-Run these commands in terminal / command prompt
+Run these commands in terminal / command prompt:
 
 mkdir ghost-local  
 cd ghost-local  
@@ -231,7 +231,7 @@ Ensure Ghost is running locally before executing tests
 
 ### Option 1: Open Cypress Test Runner (UI Mode)
 
-## Navigate to the "Ghost QA Test" folder in a terminal or command prompt and run this command
+Navigate to the "Ghost QA Test" folder in a terminal or command prompt and run this command:
 
 npx cypress open
 
